@@ -3,6 +3,7 @@ var sec = 0;
 var mint = 0;
 var hour = 0;
 
+
 var getmesc = document.getElementById("mesc");
 var getsec = document.getElementById("sec");
 var getmint = document.getElementById("mint");
@@ -52,4 +53,13 @@ function reset() {
   getsec.innerHTML = "00";
   getmint.innerHTML = "00";
   gethour.innerHTML = "00";
+}
+
+function changeTheme() {
+  var body = document.getElementsByTagName("body")[0];
+  if (body.classList.contains("dark-theme")) {
+      body.classList.remove("dark-theme");
+  } else {
+      body.classList.add("dark-theme");
+  }
 }

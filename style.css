@@ -1,16 +1,29 @@
+body {
+    transition: background-color 0.5s ease;
+}
+
+body.dark-theme {
+    
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
 @font-face {
     font-family:"My Font" ;
     src: url(./font/Poetsen_One/PoetsenOne-Regular.ttf);
 }
 *{font-family: "My Font";}
 
-body{
-    background-color: black;
-}
+
 
 .main{
     /* background-color: aliceblue; */
     background-color: rgba(255, 255, 255, 0.986);
+    /* background-color: rgb(52, 7, 7); */
     width: 50%;
     margin: auto;
     margin-top: 100px;
@@ -31,7 +44,7 @@ h1 { font-size: 45px;  }
     justify-content: space-around;
     color: #0381bb;
     margin: 10px;
-    /* background-color: rgb(243, 245, 247); */
+    /* background-color: rgb(23, 23, 24); */
     box-shadow: 1px 1px 10px 0.9px rgba(148, 147, 147, 0.534);
     border-radius: 15px;
     border: none;
@@ -71,7 +84,7 @@ h1 { font-size: 45px;  }
     background-color: #0381bb;
 }
 
-@media only screen and  (max-width: 700px){
+@media only screen and  (max-width: 800px){
     .main{
         width: 85%;
         height: 200px;
