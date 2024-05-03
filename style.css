@@ -1,0 +1,98 @@
+@font-face {
+    font-family:"My Font" ;
+    src: url(./font/Poetsen_One/PoetsenOne-Regular.ttf);
+}
+*{font-family: "My Font";}
+
+body{
+    background-color: black;
+}
+
+.main{
+    /* background-color: aliceblue; */
+    background-color: rgba(255, 255, 255, 0.986);
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    height: 350px; 
+}
+
+h3 { font-size: 25px;  }
+h1 { font-size: 45px;  }
+
+.time{
+    width: 100px;
+    text-align: center;
+}
+.counter{
+    display: flex;
+    justify-content: space-around;
+    color: #0381bb;
+    margin: 10px;
+    /* background-color: rgb(243, 245, 247); */
+    box-shadow: 1px 1px 10px 0.9px rgba(148, 147, 147, 0.534);
+    border-radius: 15px;
+    border: none;
+
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    
+}
+
+.btn> button{
+    width: 150px;
+    height: 45px;
+    background-color: #205e94;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 5px;
+    /* box-shadow: 2px 2px 20px rgba(209, 214, 217, 0.25); */
+    border: none;
+
+   
+}
+
+.btn> button:nth-last-child(2){
+  background-color: #d23332;
+}
+.btn> button:nth-last-child(1){
+  background-color: #20b380;
+}
+.btn> button:hover{
+    background-color: #18bb03;
+}
+
+.btn> button:active{
+    background-color: #0381bb;
+}
+
+@media only screen and  (max-width: 700px){
+    .main{
+        width: 85%;
+        height: 200px;
+      
+    }
+    h3{
+        
+        font-size: 15px;
+        
+    }
+    h1{
+      
+        font-size: 25px;
+        
+    }
+    .btn{
+        padding-top: 25px;
+   
+    }
+    .btn> button{
+        width: 80px;
+        height: 35px;
+    }
+}
